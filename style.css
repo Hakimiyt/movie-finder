@@ -205,4 +205,14 @@ header {
     .logo h1 {
         font-size: 2.5rem;
     }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #searchBtn {
+        width: 100%;
+    }
+    
 }
