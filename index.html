@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder - Carian Filem Pintar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="logo">
+        <img src="https://img.icons8.com/fluency/64/movie.png" alt="icon">
+        <h1>Movie<span>Finder</span></h1>
+    </div>
+    <!-- Container Carian -->
+    <div class="search-container">
+        <div class="search-box">
+            <!-- Input Carian -->
+            <input type="text" id="searchInput" placeholder="Cari siri TV atau filem">
+            <button id="searchBtn">Cari Sekarang</button>
+        </div>
+        <!-- Cadangan -->
+        <div class="suggestions">
+            <button class="suggest-btn">Batman</button>
+            <button class="suggest-btn">Spider-man</button>
+            <button class="suggest-btn">Avengers</button>
+            <button class="suggest-btn">Stranger Things</button>
+            <button class="suggest-btn">The Matrix</button>
+            <button class="suggest-btn">The Tonight Show</button>
+            <button class="suggest-btn">Breaking Bad</button>
+        </div>
+    </div>
+</header>
+    <!-- Kandungan Utama -->
+    <main>
+        <!-- Mesej Status -->
+        <div id="statusMessage" class="info-text">Sila masukkan tajuk filem untuk memulakan carian.</div>
+        <!-- Kiraan Hasil -->
+        <div id="resultsCount" class="results-count"></div>
+        <!-- Grid Filemwaa -->
+        <div id="movieGrid" class="movie-grid">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
