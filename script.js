@@ -9,6 +9,7 @@ const suggestBtns = document.querySelectorAll('.suggest-btn');
 async function searchMovies(query) {
     if (!query) {
         statusMessage.textContent = "Carian masih berjalan.";
+        statusMessage.className = 'primary';
         movieGrid.innerHTML = '';
         resultsCount.textContent = '';
         return;
@@ -26,7 +27,7 @@ async function searchMovies(query) {
         const data = await response.json();
 
         if (data.length === 0) {
-            statusMessage.textContent = 'Mesej "Movie not found"';
+            statusMessage.textContent = 'Movie not found';
             statusMessage.className = 'error';
             return;
         }
