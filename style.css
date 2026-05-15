@@ -1,12 +1,14 @@
+/* Gaya Umum */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Gaya Badan */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0f172a; /* Warna gelap elegan */
+    background-color: #0f172a;
     color: #f1f5f9;
 }
 
@@ -16,6 +18,7 @@ header {
     text-align: center;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -85,7 +88,7 @@ header {
     transform: scale(1.05);
 }
 
-/* Pill-style Suggestions */
+/* Cadangan */
 .suggestions {
     margin-top: 25px;
     display: flex;
@@ -153,6 +156,7 @@ header {
     overflow: hidden;
 }
 
+/* Maklumat Meta */
 .meta-data {
     display: flex;
     justify-content: space-between;
@@ -201,6 +205,12 @@ header {
     padding: 20px;
 }
 
+.primary {
+    color: #57C785;
+    text-align: center;
+    padding: 20px;
+}
+
 @media (max-width: 600px) {
     .logo h1 {
         font-size: 2.5rem;
@@ -213,6 +223,10 @@ header {
 
     #searchBtn {
         width: 100%;
+    }
+
+    .movie-card img {
+        height: 250px;
     }
     
 }
